@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		387C657527E07F9B000B07E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C657427E07F9B000B07E0 /* AppDelegate.swift */; };
 		387C657727E07F9B000B07E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C657627E07F9B000B07E0 /* SceneDelegate.swift */; };
-		387C657927E07F9B000B07E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C657827E07F9B000B07E0 /* ViewController.swift */; };
-		387C657C27E07F9B000B07E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387C657A27E07F9B000B07E0 /* Main.storyboard */; };
 		387C657E27E07F9D000B07E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387C657D27E07F9D000B07E0 /* Assets.xcassets */; };
 		387C658127E07F9D000B07E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387C657F27E07F9D000B07E0 /* LaunchScreen.storyboard */; };
+		BADA3E5C27E0CFB000F30AFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADA3E5B27E0CFB000F30AFB /* LoginViewController.swift */; };
+		BADA3E5E27E0CFC200F30AFB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADA3E5D27E0CFC200F30AFB /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		387C657127E07F9B000B07E0 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387C657427E07F9B000B07E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		387C657627E07F9B000B07E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		387C657827E07F9B000B07E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		387C657B27E07F9B000B07E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		387C657D27E07F9D000B07E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387C658027E07F9D000B07E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		387C658227E07F9D000B07E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BADA3E5B27E0CFB000F30AFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BADA3E5D27E0CFC200F30AFB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		387C657327E07F9B000B07E0 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				387C657427E07F9B000B07E0 /* AppDelegate.swift */,
-				387C657627E07F9B000B07E0 /* SceneDelegate.swift */,
-				387C657827E07F9B000B07E0 /* ViewController.swift */,
-				387C657A27E07F9B000B07E0 /* Main.storyboard */,
-				387C657D27E07F9D000B07E0 /* Assets.xcassets */,
+				BADA3E5927E0CEF100F30AFB /* Resources */,
+				BADA3E5827E0CE5800F30AFB /* Supports */,
+				BADA3E5227E0872100F30AFB /* UI */,
+				BADA3E5127E0871400F30AFB /* Models */,
 				387C657F27E07F9D000B07E0 /* LaunchScreen.storyboard */,
-				387C658227E07F9D000B07E0 /* Info.plist */,
 			);
 			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		BADA3E5127E0871400F30AFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BADA3E5227E0872100F30AFB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BADA3E5A27E0CFA100F30AFB /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BADA3E5827E0CE5800F30AFB /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				387C657427E07F9B000B07E0 /* AppDelegate.swift */,
+				387C657627E07F9B000B07E0 /* SceneDelegate.swift */,
+				387C658227E07F9D000B07E0 /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		BADA3E5927E0CEF100F30AFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				387C657D27E07F9D000B07E0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BADA3E5A27E0CFA100F30AFB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BADA3E5B27E0CFB000F30AFB /* LoginViewController.swift */,
+				BADA3E5D27E0CFC200F30AFB /* Login.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +165,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADA3E5E27E0CFC200F30AFB /* Login.storyboard in Resources */,
 				387C658127E07F9D000B07E0 /* LaunchScreen.storyboard in Resources */,
 				387C657E27E07F9D000B07E0 /* Assets.xcassets in Resources */,
-				387C657C27E07F9B000B07E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387C657927E07F9B000B07E0 /* ViewController.swift in Sources */,
+				BADA3E5C27E0CFB000F30AFB /* LoginViewController.swift in Sources */,
 				387C657527E07F9B000B07E0 /* AppDelegate.swift in Sources */,
 				387C657727E07F9B000B07E0 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		387C657A27E07F9B000B07E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				387C657B27E07F9B000B07E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		387C657F27E07F9D000B07E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +321,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A6NV79A9WC;
+				DEVELOPMENT_TEAM = 3A8H2GTC36;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstagramClone/Info.plist;
+				INFOPLIST_FILE = InstagramClone/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,12 +349,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A6NV79A9WC;
+				DEVELOPMENT_TEAM = 3A8H2GTC36;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstagramClone/Info.plist;
+				INFOPLIST_FILE = InstagramClone/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
