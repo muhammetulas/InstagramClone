@@ -11,6 +11,11 @@
 		387C657727E07F9B000B07E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C657627E07F9B000B07E0 /* SceneDelegate.swift */; };
 		387C657E27E07F9D000B07E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387C657D27E07F9D000B07E0 /* Assets.xcassets */; };
 		387C658127E07F9D000B07E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387C657F27E07F9D000B07E0 /* LaunchScreen.storyboard */; };
+		BA8A1C1127E32499009B363E /* SFProText.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1027E32499009B363E /* SFProText.ttf */; };
+		BA8A1C1327E32553009B363E /* SFProTextSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1227E32553009B363E /* SFProTextSemiBold.ttf */; };
+		BA8A1C1627E32FC3009B363E /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1527E32FC3009B363E /* Authorization.storyboard */; };
+		BA8A1C1827E32FE1009B363E /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1C1727E32FE1009B363E /* AuthorizationViewController.swift */; };
+		BA8A1C1A27E34D3E009B363E /* SFProTextMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1927E34D3E009B363E /* SFProTextMedium.ttf */; };
 		BADA3E5C27E0CFB000F30AFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADA3E5B27E0CFB000F30AFB /* LoginViewController.swift */; };
 		BADA3E5E27E0CFC200F30AFB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADA3E5D27E0CFC200F30AFB /* Login.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,6 +27,11 @@
 		387C657D27E07F9D000B07E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387C658027E07F9D000B07E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		387C658227E07F9D000B07E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8A1C1027E32499009B363E /* SFProText.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProText.ttf; sourceTree = "<group>"; };
+		BA8A1C1227E32553009B363E /* SFProTextSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProTextSemiBold.ttf; sourceTree = "<group>"; };
+		BA8A1C1527E32FC3009B363E /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		BA8A1C1727E32FE1009B363E /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		BA8A1C1927E34D3E009B363E /* SFProTextMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProTextMedium.ttf; sourceTree = "<group>"; };
 		BADA3E5B27E0CFB000F30AFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BADA3E5D27E0CFC200F30AFB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +75,25 @@
 			path = InstagramClone;
 			sourceTree = "<group>";
 		};
+		BA8A1C0F27E32479009B363E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1C1027E32499009B363E /* SFProText.ttf */,
+				BA8A1C1927E34D3E009B363E /* SFProTextMedium.ttf */,
+				BA8A1C1227E32553009B363E /* SFProTextSemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BA8A1C1427E32FA2009B363E /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1C1527E32FC3009B363E /* Authorization.storyboard */,
+				BA8A1C1727E32FE1009B363E /* AuthorizationViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
 		BADA3E5127E0871400F30AFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				BADA3E5A27E0CFA100F30AFB /* Login */,
+				BA8A1C1427E32FA2009B363E /* Authorization */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -93,6 +123,7 @@
 		BADA3E5927E0CEF100F30AFB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1C0F27E32479009B363E /* Fonts */,
 				387C657D27E07F9D000B07E0 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -165,8 +196,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1C1627E32FC3009B363E /* Authorization.storyboard in Resources */,
+				BA8A1C1127E32499009B363E /* SFProText.ttf in Resources */,
 				BADA3E5E27E0CFC200F30AFB /* Login.storyboard in Resources */,
+				BA8A1C1A27E34D3E009B363E /* SFProTextMedium.ttf in Resources */,
 				387C658127E07F9D000B07E0 /* LaunchScreen.storyboard in Resources */,
+				BA8A1C1327E32553009B363E /* SFProTextSemiBold.ttf in Resources */,
 				387C657E27E07F9D000B07E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1C1827E32FE1009B363E /* AuthorizationViewController.swift in Sources */,
 				BADA3E5C27E0CFB000F30AFB /* LoginViewController.swift in Sources */,
 				387C657527E07F9B000B07E0 /* AppDelegate.swift in Sources */,
 				387C657727E07F9B000B07E0 /* SceneDelegate.swift in Sources */,
@@ -329,6 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
