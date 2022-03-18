@@ -11,6 +11,12 @@
 		387C657727E07F9B000B07E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C657627E07F9B000B07E0 /* SceneDelegate.swift */; };
 		387C657E27E07F9D000B07E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387C657D27E07F9D000B07E0 /* Assets.xcassets */; };
 		387C658127E07F9D000B07E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387C657F27E07F9D000B07E0 /* LaunchScreen.storyboard */; };
+		BA69E1F027E4A69C0017CB3F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69E1EF27E4A69C0017CB3F /* FeedViewController.swift */; };
+		BA69E1F227E4A6BC0017CB3F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69E1F127E4A6BC0017CB3F /* SearchViewController.swift */; };
+		BA69E1F527E4A6E20017CB3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69E1F427E4A6E20017CB3F /* ProfileViewController.swift */; };
+		BA69E1F727E4A7140017CB3F /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA69E1F627E4A7140017CB3F /* Feed.storyboard */; };
+		BA69E1F927E4A7230017CB3F /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA69E1F827E4A7230017CB3F /* Search.storyboard */; };
+		BA69E1FB27E4A72A0017CB3F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA69E1FA27E4A72A0017CB3F /* Profile.storyboard */; };
 		BA8A1C1127E32499009B363E /* SFProText.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1027E32499009B363E /* SFProText.ttf */; };
 		BA8A1C1327E32553009B363E /* SFProTextSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1227E32553009B363E /* SFProTextSemiBold.ttf */; };
 		BA8A1C1627E32FC3009B363E /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1527E32FC3009B363E /* Authorization.storyboard */; };
@@ -27,6 +33,12 @@
 		387C657D27E07F9D000B07E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387C658027E07F9D000B07E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		387C658227E07F9D000B07E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA69E1EF27E4A69C0017CB3F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		BA69E1F127E4A6BC0017CB3F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BA69E1F427E4A6E20017CB3F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BA69E1F627E4A7140017CB3F /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		BA69E1F827E4A7230017CB3F /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		BA69E1FA27E4A72A0017CB3F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		BA8A1C1027E32499009B363E /* SFProText.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProText.ttf; sourceTree = "<group>"; };
 		BA8A1C1227E32553009B363E /* SFProTextSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProTextSemiBold.ttf; sourceTree = "<group>"; };
 		BA8A1C1527E32FC3009B363E /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
@@ -68,11 +80,38 @@
 			children = (
 				BADA3E5927E0CEF100F30AFB /* Resources */,
 				BADA3E5827E0CE5800F30AFB /* Supports */,
-				BADA3E5227E0872100F30AFB /* UI */,
 				BADA3E5127E0871400F30AFB /* Models */,
+				BADA3E5227E0872100F30AFB /* UI */,
 				387C657F27E07F9D000B07E0 /* LaunchScreen.storyboard */,
 			);
 			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		BA69E1EC27E4930A0017CB3F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				BA69E1EF27E4A69C0017CB3F /* FeedViewController.swift */,
+				BA69E1F627E4A7140017CB3F /* Feed.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		BA69E1ED27E493430017CB3F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BA69E1F427E4A6E20017CB3F /* ProfileViewController.swift */,
+				BA69E1FA27E4A72A0017CB3F /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BA69E1EE27E493600017CB3F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BA69E1F127E4A6BC0017CB3F /* SearchViewController.swift */,
+				BA69E1F827E4A7230017CB3F /* Search.storyboard */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		BA8A1C0F27E32479009B363E /* Fonts */ = {
@@ -106,6 +145,9 @@
 			children = (
 				BADA3E5A27E0CFA100F30AFB /* Login */,
 				BA8A1C1427E32FA2009B363E /* Authorization */,
+				BA69E1EC27E4930A0017CB3F /* Feed */,
+				BA69E1EE27E493600017CB3F /* Search */,
+				BA69E1ED27E493430017CB3F /* Profile */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -198,7 +240,10 @@
 			files = (
 				BA8A1C1627E32FC3009B363E /* Authorization.storyboard in Resources */,
 				BA8A1C1127E32499009B363E /* SFProText.ttf in Resources */,
+				BA69E1FB27E4A72A0017CB3F /* Profile.storyboard in Resources */,
+				BA69E1F727E4A7140017CB3F /* Feed.storyboard in Resources */,
 				BADA3E5E27E0CFC200F30AFB /* Login.storyboard in Resources */,
+				BA69E1F927E4A7230017CB3F /* Search.storyboard in Resources */,
 				BA8A1C1A27E34D3E009B363E /* SFProTextMedium.ttf in Resources */,
 				387C658127E07F9D000B07E0 /* LaunchScreen.storyboard in Resources */,
 				BA8A1C1327E32553009B363E /* SFProTextSemiBold.ttf in Resources */,
@@ -213,8 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA69E1F227E4A6BC0017CB3F /* SearchViewController.swift in Sources */,
 				BA8A1C1827E32FE1009B363E /* AuthorizationViewController.swift in Sources */,
 				BADA3E5C27E0CFB000F30AFB /* LoginViewController.swift in Sources */,
+				BA69E1F027E4A69C0017CB3F /* FeedViewController.swift in Sources */,
+				BA69E1F527E4A6E20017CB3F /* ProfileViewController.swift in Sources */,
 				387C657527E07F9B000B07E0 /* AppDelegate.swift in Sources */,
 				387C657727E07F9B000B07E0 /* SceneDelegate.swift in Sources */,
 			);
