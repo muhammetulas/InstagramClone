@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,8 +29,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVS-NU-dbC" userLabel="Footer View">
                                 <rect key="frame" x="0.0" y="782" width="414" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram от Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGn-k3-NUK">
-                                        <rect key="frame" x="141.5" y="33" width="131" height="14.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram оr Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGn-k3-NUK">
+                                        <rect key="frame" x="142" y="33" width="130" height="14.5"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
@@ -41,14 +42,14 @@
                                     <constraint firstItem="cGn-k3-NUK" firstAttribute="centerX" secondItem="jVS-NU-dbC" secondAttribute="centerX" id="tuM-wN-1Ft"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-Ng-0Jf" userLabel="BodyStack View">
-                                <rect key="frame" x="0.0" y="199.5" width="414" height="497"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-Ng-0Jf" userLabel="BodyStack View">
+                                <rect key="frame" x="0.0" y="124" width="414" height="648"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagramLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Nbl-Hd-fno">
                                         <rect key="frame" x="116" y="0.0" width="182" height="49"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L91-dz-fGL" userLabel="FormView">
-                                        <rect key="frame" x="0.0" y="89" width="414" height="225.5"/>
+                                        <rect key="frame" x="0.0" y="57" width="414" height="225"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="00I-Ur-qyw" userLabel="Username Text Field">
                                                 <rect key="frame" x="20.5" y="1" width="373" height="44"/>
@@ -61,14 +62,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l17-Bs-c2l">
-                                                <rect key="frame" x="20.5" y="120" width="373" height="31.5"/>
+                                                <rect key="frame" x="20.5" y="120" width="373" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="14"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHe-zQ-jdz">
-                                                <rect key="frame" x="20.5" y="181.5" width="373" height="44"/>
+                                                <rect key="frame" x="20.5" y="181" width="373" height="44"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log in">
                                                     <fontDescription key="titleFontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
@@ -93,30 +94,30 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2E-yx-31A">
-                                        <rect key="frame" x="110.5" y="354.5" width="193.5" height="31"/>
+                                        <rect key="frame" x="110.5" y="290" width="193.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="facebook logo" imagePlacement="leading" title="  Log in with Facebook">
                                             <fontDescription key="titleFontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
                                         </buttonConfiguration>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jnU-Kj-XWS" userLabel="OR Stack View">
-                                        <rect key="frame" x="23" y="425.5" width="368" height="14.5"/>
+                                        <rect key="frame" x="23" y="329" width="368" height="294"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkC-yo-vZl" userLabel="Left Line">
-                                                <rect key="frame" x="0.0" y="7" width="145" height="1"/>
+                                                <rect key="frame" x="0.0" y="146.5" width="145" height="1"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="95y-NT-RsN"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-Cx-hk6">
-                                                <rect key="frame" x="175" y="0.0" width="18" height="14.5"/>
+                                                <rect key="frame" x="175" y="140" width="18" height="14.5"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="12"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svH-WS-8CL" userLabel="Right Line">
-                                                <rect key="frame" x="223" y="7" width="145" height="1"/>
+                                                <rect key="frame" x="223" y="146.5" width="145" height="1"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="6hL-Os-Swk"/>
@@ -130,7 +131,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6aW-lc-IwX" userLabel="SignUp Stack View">
-                                        <rect key="frame" x="98.5" y="480" width="217" height="17"/>
+                                        <rect key="frame" x="98.5" y="631" width="217" height="17"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skE-2J-sAa">
                                                 <rect key="frame" x="0.0" y="0.0" width="154.5" height="17"/>
@@ -167,6 +168,7 @@
                             <constraint firstItem="P6m-Ng-0Jf" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" id="cfm-jD-PI4"/>
                             <constraint firstItem="8c8-pE-81b" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0491071" id="eq7-iz-QxO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jVS-NU-dbC" secondAttribute="trailing" id="gOf-OB-fgS"/>
+                            <constraint firstItem="P6m-Ng-0Jf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" multiplier="774/550" id="rBh-WZ-ayK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ez6-sd-Bek">
@@ -188,7 +190,6 @@
         <!--Navigation Controller-->
         <scene sceneID="TyR-Ve-9qh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kgv-Ti-Gbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bql-sY-Gia" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yg6-ql-gsf">
@@ -200,6 +201,7 @@
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="WLh-EK-55l"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgv-Ti-Gbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
         </scene>
