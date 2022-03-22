@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Feed View Controller-->
+        <!--Feed-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="FeedViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,7 +158,7 @@
                             <constraint firstItem="IX3-l4-RAT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gmJ-CV-41X"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Sww-RW-X4a">
+                    <navigationItem key="navigationItem" title="Feed" id="Sww-RW-X4a">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="9Yh-oH-BQT"/>
                         <rightBarButtonItems>
                             <barButtonItem title="Item" id="hMy-sg-aM9"/>

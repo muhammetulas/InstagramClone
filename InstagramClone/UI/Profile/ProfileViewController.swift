@@ -9,26 +9,31 @@ import Foundation
 import UIKit
 
 class ProfileViewController: UIViewController {
-    @IBOutlet weak var postsCollectionView: UICollectionView!
+    
+    @IBOutlet weak var postCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        postsCollectionView.delegate = self
-        postsCollectionView.dataSource = self
+        postCollectionView.delegate = self
+        postCollectionView.dataSource = self
     }
     
 }
 
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 40
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = postsCollectionView.dequeueReusableCell(withReuseIdentifier: "profilePostCell", for: indexPath) as! ProfilePostCell
+        let cell = postCollectionView.dequeueReusableCell(withReuseIdentifier: "profilePostCell", for: indexPath) as! ProfilePostCell
         cell.profilePostImage.image = UIImage(named: "post1")
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = self.view.bounds.width
+        let cellWidth = (screenWidth - 2) / 3
+        return CGSize(width: cellWidth, height: cellWidth)
+    }
 }
