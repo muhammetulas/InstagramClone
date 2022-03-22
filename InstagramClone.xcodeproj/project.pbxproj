@@ -22,6 +22,9 @@
 		BA8A1C1627E32FC3009B363E /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1527E32FC3009B363E /* Authorization.storyboard */; };
 		BA8A1C1827E32FE1009B363E /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1C1727E32FE1009B363E /* AuthorizationViewController.swift */; };
 		BA8A1C1A27E34D3E009B363E /* SFProTextMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1C1927E34D3E009B363E /* SFProTextMedium.ttf */; };
+		BAB5EE4427E9B7DA00A0B348 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5EE4327E9B7DA00A0B348 /* StoryCell.swift */; };
+		BAB5EE4627E9D80500A0B348 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5EE4527E9D80500A0B348 /* PostCell.swift */; };
+		BAB5EE4827E9E57500A0B348 /* ProfilePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5EE4727E9E57500A0B348 /* ProfilePostCell.swift */; };
 		BADA3E5C27E0CFB000F30AFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADA3E5B27E0CFB000F30AFB /* LoginViewController.swift */; };
 		BADA3E5E27E0CFC200F30AFB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADA3E5D27E0CFC200F30AFB /* Login.storyboard */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,9 @@
 		BA8A1C1527E32FC3009B363E /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
 		BA8A1C1727E32FE1009B363E /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		BA8A1C1927E34D3E009B363E /* SFProTextMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProTextMedium.ttf; sourceTree = "<group>"; };
+		BAB5EE4327E9B7DA00A0B348 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		BAB5EE4527E9D80500A0B348 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		BAB5EE4727E9E57500A0B348 /* ProfilePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostCell.swift; sourceTree = "<group>"; };
 		BADA3E5B27E0CFB000F30AFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BADA3E5D27E0CFC200F30AFB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +98,8 @@
 			children = (
 				BA69E1EF27E4A69C0017CB3F /* FeedViewController.swift */,
 				BA69E1F627E4A7140017CB3F /* Feed.storyboard */,
+				BAB5EE4327E9B7DA00A0B348 /* StoryCell.swift */,
+				BAB5EE4527E9D80500A0B348 /* PostCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 			children = (
 				BA69E1F427E4A6E20017CB3F /* ProfileViewController.swift */,
 				BA69E1FA27E4A72A0017CB3F /* Profile.storyboard */,
+				BAB5EE4727E9E57500A0B348 /* ProfilePostCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -261,8 +270,11 @@
 				BA69E1F227E4A6BC0017CB3F /* SearchViewController.swift in Sources */,
 				BA8A1C1827E32FE1009B363E /* AuthorizationViewController.swift in Sources */,
 				BADA3E5C27E0CFB000F30AFB /* LoginViewController.swift in Sources */,
+				BAB5EE4427E9B7DA00A0B348 /* StoryCell.swift in Sources */,
 				BA69E1F027E4A69C0017CB3F /* FeedViewController.swift in Sources */,
+				BAB5EE4627E9D80500A0B348 /* PostCell.swift in Sources */,
 				BA69E1F527E4A6E20017CB3F /* ProfileViewController.swift in Sources */,
+				BAB5EE4827E9E57500A0B348 /* ProfilePostCell.swift in Sources */,
 				387C657527E07F9B000B07E0 /* AppDelegate.swift in Sources */,
 				387C657727E07F9B000B07E0 /* SceneDelegate.swift in Sources */,
 			);
