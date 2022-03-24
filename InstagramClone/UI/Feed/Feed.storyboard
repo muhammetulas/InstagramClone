@@ -159,7 +159,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Feed" id="Sww-RW-X4a">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="9Yh-oH-BQT"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="9Yh-oH-BQT">
+                            <connections>
+                                <action selector="logoutButton:" destination="Y6W-OH-hqX" id="m0e-32-8cR"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem title="Item" id="hMy-sg-aM9"/>
                             <barButtonItem title="Item" id="Y78-Ag-ttx"/>
@@ -168,11 +172,22 @@
                     <connections>
                         <outlet property="collectionView" destination="led-2w-rTD" id="l2R-q1-WsV"/>
                         <outlet property="tableView" destination="IX3-l4-RAT" id="tal-Dp-8E6"/>
+                        <segue destination="Ll8-Qe-C5H" kind="presentation" identifier="toAuthFromFeed" modalPresentationStyle="fullScreen" id="8L1-Y8-MZE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1772" y="76.847290640394093"/>
+            <point key="canvasLocation" x="1730" y="78"/>
+        </scene>
+        <!--Authorization-->
+        <scene sceneID="Sq3-Tn-w5H">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Authorization" id="Ll8-Qe-C5H" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UQj-W7-j0E"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yct-W3-3cq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2373" y="-16"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pGa-h3-XBD">

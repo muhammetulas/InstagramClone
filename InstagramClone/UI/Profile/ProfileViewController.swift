@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+//UICollectionViewCompositionalLayout
+
 class ProfileViewController: UIViewController {
     
     @IBOutlet weak var postCollectionView: UICollectionView!
@@ -17,12 +19,11 @@ class ProfileViewController: UIViewController {
         postCollectionView.delegate = self
         postCollectionView.dataSource = self
     }
-    
 }
 
-extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 40
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -30,9 +31,9 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         cell.profilePostImage.image = UIImage(named: "post1")
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let screenWidth = self.view.bounds.width
+        let screenWidth = view.bounds.width
         let cellWidth = (screenWidth - 2) / 3
         return CGSize(width: cellWidth, height: cellWidth)
     }
